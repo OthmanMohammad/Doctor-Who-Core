@@ -23,7 +23,7 @@ namespace DoctorWho.Db
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             // Use the UseSqlServer method to configure the connection string to use SQL Server
-            optionsBuilder.UseSqlServer("Data Source = LAPTOP-COT3PQTF\\SQLEXPRESS; Initial Catalog=DoctorWhoCore")
+            optionsBuilder.UseSqlServer("Data Source = LAPTOP-COT3PQTF\\SQLEXPRESS; Initial Catalog=DoctorWhoCore; Integrated Security=True")
                 .LogTo(Console.WriteLine, new[] { DbLoggerCategory.Database.Command.Name }, LogLevel.Information)
                 .EnableSensitiveDataLogging(true);
         }
