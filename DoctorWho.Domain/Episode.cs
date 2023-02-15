@@ -17,7 +17,7 @@ namespace DoctorWho.Domain
         }
 
         // Constructor that takes in values for all of the Episode properties and initializes the EpisodeCompanions and EpisodeEnemies lists
-        public Episode(int? SeriesNumber, int? EpisodeNumber, string EpisodeType, string Title, DateTime? EpisodeDate, int AuthorId, DoctorIdEnum DoctorId, string Notes) : this()
+        public Episode(int? SeriesNumber, int? EpisodeNumber, string EpisodeType, string Title, DateTime? EpisodeDate, int? AuthorId, DoctorIdEnum DoctorId, string Notes) : this()
         {
             this.SeriesNumber = SeriesNumber;
             this.EpisodeNumber = EpisodeNumber;
@@ -37,7 +37,7 @@ namespace DoctorWho.Domain
         public string EpisodeType { get; set; }
         public string Title { get; set; }
         public DateTime? EpisodeDate { get; set; }
-        public int AuthorId { get; set; }
+        public int? AuthorId { get; set; }
         public DoctorIdEnum DoctorId { get; set; }
         public string Notes { get; set; }
 
