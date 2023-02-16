@@ -284,7 +284,6 @@ namespace DoctorWho.Db
             modelBuilder.HasDbFunction(typeof(DoctorWhoCoreDbContext)
                         .GetMethod(nameof(Execute_fnEnemies), new[] { typeof(int) }))
                         .HasName("fnEnemies");
-
         }
     }
 }
