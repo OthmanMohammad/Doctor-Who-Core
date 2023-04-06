@@ -58,4 +58,4 @@ Update-Database
 ```
 
 # Authors
-This project was created by **Mohammad Othman**.
+This project was created by [**Mohammad Othman**](https://github.com/OthmanMohammad).
